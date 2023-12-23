@@ -3,7 +3,7 @@ const config = {
     "https://raw.githubusercontent.com/electron-userland/electron-builder/master/packages/app-builder-lib/scheme.json",
   appId: "YourAppID",
   asar: true,
-  productName: "YourAppName",
+  productName: "myApp",
   directories: {
     output: "release/${version}",
   },

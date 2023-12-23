@@ -5,8 +5,7 @@ import { oneDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import styles from "./styles.module.scss";
 
 // import { generateRandomString, programmingLanguages } from "@/utils/app/codeblock";
-import { CheckOutlined, CopyOutlined, DownloadOutlined } from "@ant-design/icons";
-import classNames from "classnames";
+import { CheckOutlined, CopyOutlined } from "@ant-design/icons";
 import _ from "lodash";
 
 interface Props {

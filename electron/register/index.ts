@@ -11,7 +11,7 @@ interface Size {
 /** 注册通信 ipc */
 export function registerHandler(win?: BrowserWindow) {
   /** 窗口大小改变 */
-  ipcMain.handle("window-resize", (e, sizeParams: Size) => {
+  ipcMain.handle("window-resize", (_e, sizeParams: Size) => {
     if (!ObjectUtils.hasValue(win)) {
       return;
     }

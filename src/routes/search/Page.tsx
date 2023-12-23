@@ -1,6 +1,6 @@
-import { FC, useEffect, useLayoutEffect } from "react";
+import { FC, useLayoutEffect } from "react";
 import styles from "./styles.module.scss";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import SearchInput from "../home/SearchInput";
 import { useHotkeys } from "react-hotkeys-hook";
 

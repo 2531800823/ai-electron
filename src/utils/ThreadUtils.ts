@@ -5,7 +5,7 @@ export default class ThreadUtils {
    * @example await ThreadUtils.sleep(500) 等待 500 ms
    */
   public static sleep(interval: number): Promise<void> {
-    return new Promise<void>((resolve, reject) => {
+    return new Promise<void>((resolve) => {
       const windowHandle = setTimeout(() => {
         clearInterval(windowHandle);
         resolve();

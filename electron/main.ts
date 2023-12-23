@@ -32,6 +32,7 @@ function createWindow() {
     x: Math.floor((width - windowWidth) / 2),
     y: Math.floor((height - windowHeight) / 2),
     show: false,
+    title: "myApp",
     autoHideMenuBar: true,
     icon: path.join(process.env.VITE_PUBLIC, "electron-vite.svg"),
     webPreferences: {

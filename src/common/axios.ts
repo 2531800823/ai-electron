@@ -128,7 +128,7 @@ export async function api<T = unknown>(config: RequestConfig): Promise<T> {
     //   return Promise.resolve(res.data);
     // }
     //   需要规定 直接返回还是 .data
-    return Promise.resolve(res);
+    return Promise.resolve(res) as any;
   } catch (error) {
     return Promise.reject(error);
   }

@@ -20,6 +20,7 @@ export function createTray(win?: BrowserWindow) {
       type: "normal",
       toolTip: "ai 聊天",
       click: () => {
+        win?.show();
         win?.webContents.send("go-to", "/home");
       },
     },
@@ -39,5 +40,4 @@ export function createTray(win?: BrowserWindow) {
   // Call this again for Linux because we modified the context menu
   tray.setContextMenu(contextMenu);
   tray.setToolTip("This is my application");
-  tray.setTitle("This is my title");
 }
