@@ -1,0 +1,139 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: #eef4fe;
+  overflow: hidden;
+  position: relative;
+
+  //   TODO 统一字体
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+$HeaderHeight: 50px;
+$footerHeight: 90px;
+
+.header {
+  position: absolute;
+  top: 0;
+  height: $HeaderHeight;
+  left: 0;
+  right: 0;
+  background-color: pink;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  
+  -webkit-app-region: drag
+}
+
+.content {
+  position: absolute;
+  top: $HeaderHeight;
+  bottom: $footerHeight;
+  left: 0;
+  right: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-height: $footerHeight;
+  padding: 16px 16px 24px;
+
+  display: flex;
+  flex-direction: column;
+
+  .fUtils {
+    height: 36px;
+    margin-bottom: 12px;
+  }
+
+  .input {
+    flex: 1;
+
+    
+}
+
+
+}
+.inputMain {
+  display: flex;
+  user-select: none;
+
+  position: relative;
+  background: #fff;
+  box-shadow: 0 4px 16px 0 rgba(179, 178, 255, 0.3);
+  padding: 10px 64px 10px 0;
+  line-height: 0;
+
+  pointer-events: auto;
+  flex-grow: 1;
+  height: 48px;
+  background: hsla(0, 0%, 100%, 0.5);
+  border-radius: 24px;
+  overflow: hidden;
+
+  .textInput {
+    width: 100%;
+    caret-color: #5240ff;
+    resize: none;
+    font-size: 16px;
+    line-height: 28px;
+    height: auto;
+    color: #1e1f24;
+    overflow-y: auto;
+    padding: 0 0 0 24px;
+    border: none;
+    outline: none;
+    word-break: break-word;
+    background: transparent;
+
+    &::-webkit-input-placeholder {
+      color: #3e3d52;
+    }
+  }
+
+  .icon {
+    position: absolute;
+    background-image: linear-gradient(-49deg, #6e55f2, #b5b7ff);
+    border-radius: 50%;
+    right: 4px;
+    bottom: 4px;
+    width: 38px;
+    height: 38px;
+    font-size: 20px;
+    line-height: 38px;
+    text-align: center;
+    color: #fff;  
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      background-image: linear-gradient(-49deg, #7359ff, #cfd0ff);
+      cursor: pointer;
+    }
+  }
+
+  .iconDisabled {
+    color: hsla(0, 0%, 100%, 0.4);
+    background-image: linear-gradient(-49deg, rgba(110, 85, 242, 0.4), rgba(181, 183, 255, 0.4));
+
+    &:hover {
+      background-image: linear-gradient(-49deg, rgba(110, 85, 242, 0.4), rgba(181, 183, 255, 0.4));
+      cursor: not-allowed;
+    }
+  }
+
+  &:hover {
+    .textInput {
+      &::-webkit-input-placeholder {
+        color: #848691;
+      }
+    }
+  }
+}

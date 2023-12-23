@@ -1,0 +1,29 @@
+.main {
+  padding-top: 10px;
+  user-select: none;
+
+  .header {
+    padding-top: 10px;
+
+    display: flex;
+    align-items: center;
+
+    .hItem {
+      width: 68px;
+      height: 68px;
+      font-size: 14px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      cursor: pointer;
+      div {
+        margin-top: 4px;
+      }
+
+      &:hover {
+        background-color: #dee2e6;
+      }
+    }
+  }
+}

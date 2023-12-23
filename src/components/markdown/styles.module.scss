@@ -1,0 +1,27 @@
+.main {
+  position: relative;
+  font-family: sans-serif;
+  font-size: 16px;
+  margin: 8px 0;
+
+  .content {
+    background-color: #1f2937;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 16px 10px;
+    margin-bottom: -4px;
+    border-radius: 4px;
+    .lag {
+      font-size: 0.75rem;
+      text-transform: lowercase;
+      color: #fff;
+    }
+
+    .copy {
+      color: #fff;
+      display: flex;
+      gap: 4px;
+    }
+  }
+}
